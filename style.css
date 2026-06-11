@@ -1,20 +1,12 @@
 /* HAREKETLİ ARKA PLAN GRADIENT */
 @keyframes movingGradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
 
 /* GLOBAL */
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
@@ -65,12 +57,13 @@ body.dark {
     border-bottom-right-radius: 40px;
 }
 
-.school-logo {
-    width: 120px;   /* önce 80'di, şimdi 120 yaptık */
+/* ⭐ LOGO DÜZELTİLDİ */
+.logo {
+    width: 120px;
     height: auto;
+    display: block;
     margin-bottom: 10px;
 }
-
 
 .title {
     font-size: 36px;
@@ -129,11 +122,10 @@ body.dark {
 
 /* LOGO STRIP */
 .logo-strip img {
-    width: 90px;   /* önce 60'tı, şimdi 90 yaptık */
+    width: 90px;
     height: auto;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
-
 
 .logo-strip img:hover {
     transform: rotate(-3deg) scale(1.15);
@@ -355,13 +347,8 @@ footer {
     transition: all 0.8s ease-out;
 }
 
-.slide-left {
-    transform: translateX(-40px);
-}
-
-.slide-right {
-    transform: translateX(40px);
-}
+.slide-left { transform: translateX(-40px); }
+.slide-right { transform: translateX(40px); }
 
 .visible {
     opacity: 1;
